@@ -1,0 +1,11 @@
+1. Es handelt sich um ein MVC Application Model
+-----------------------------------------------
+1. Das Framework erhält eine HTTP Anfrage
+2. Das Framework besitzt eine Router Komponente. Diese Komponente findet die Action Method im Controller, die am besten für die Anfrage passt.
+3. Der Controller greift dann auf das Model zurück, welches die Anfrage logisch verarbeitet. Es wird eine Antwort errechnet, oder Daten manipuliert. Dann wird das Ergebnis an den Controller zurück geschickt.
+4 und 5. Der Controller schickt dann die Daten an den View, der eine spezifische Representation erstellt ( z.b. HTML) die dann als Antwort zurück an der ursprünglichen Anfragesteller geschickt wird.
+
+
+2.
+-----------------------------------------------
+ Mit einem so genannten Functional Test können Testanfragen direkt an den Controller geschickt werden. Dadurch verhält sich die Applikation so wie bei einer Anfrage von aussen. Es sind die gewöhnlichen HTTP Anfragen möglich.
